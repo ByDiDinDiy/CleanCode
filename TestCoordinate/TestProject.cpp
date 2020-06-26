@@ -4,9 +4,9 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace TestCoordinate
+namespace TestProject
 {
-	TEST_CLASS(TestCoordinate)
+	TEST_CLASS(TestProject)
 	{
 	public:
 		
