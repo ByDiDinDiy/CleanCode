@@ -32,3 +32,13 @@ bool findStrInText(const char text[MAX_SIZE_STRING][MAX_SIZE_SYMBOL], const int 
 *  return - 0, eсли первая точка ближе к центру координат, 1 если наоборот
 */
 bool cmpCoordinate(const int x1, const int y1, const int x2, const int y2);
+
+/*!
+* Удалить из текста  quantityStr строк начиная с beginStr.
+*  \param [in] text текст для удаления строк
+*  \param [in] lengthOfTextInput длина текста
+*  \param [in] beginStr начальная строка для удаления
+*  \param [in] quantityStr количетсво строк
+*  return - количество строк в новом тексте
+*/
+int deletingRows(char text[MAX_SIZE_STRING][MAX_SIZE_SYMBOL], int lengthOfTextInput, const int beginStr, const int quantityStr);
