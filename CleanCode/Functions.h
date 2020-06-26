@@ -42,3 +42,15 @@ bool cmpCoordinate(const int x1, const int y1, const int x2, const int y2);
 *  return - количество строк в новом тексте
 */
 int deletingRows(char text[MAX_SIZE_STRING][MAX_SIZE_SYMBOL], int lengthOfTextInput, const int beginStr, const int quantityStr);
+
+/*!
+* Удалить часть текста от строки beginY символа beginX до строки endY символа endX.
+*  \param [in|out] text текст для удаления строк
+*  \param [in] lengthOfTextInput длина текста
+*  \param [in] beginX номер символа в строке первого удаляемового символа последновательности
+*  \param [in] beginY  номер строки первого удаляемового символа последновательности
+*  \param [in] endX  номер символа в строке последнего удаляемового символа последновательности
+*  \param [in] endY номер строки последнего удаляемового символа последновательности
+*  return - количество строк в тексте
+*/
+int  deleteText(char text[MAX_SIZE_STRING][MAX_SIZE_SYMBOL], const int lengthOfTextInput, const int beginX, const int beginY, const int endX, const int endY);
